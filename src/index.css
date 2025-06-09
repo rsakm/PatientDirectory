@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-md font-medium transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-4;
+  }
+
+  .badge {
+    @apply px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-fever {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .badge-headache {
+    @apply bg-orange-100 text-orange-800;
+  }
+
+  .badge-rash {
+    @apply bg-pink-100 text-pink-800;
+  }
+
+  .badge-sprained-ankle {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .badge-sore-throat {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .badge-ear-infection {
+    @apply bg-blue-100 text-blue-800;
+  }
+
+  .badge-sinusitis,
+  .badge-default {
+    @apply bg-gray-100 text-gray-800;
+  }
+}
